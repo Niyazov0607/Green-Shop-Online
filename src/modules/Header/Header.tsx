@@ -1,8 +1,8 @@
 import { CiSearch } from "react-icons/ci";
 import LogoHeader from "../../assets/images/logogreen.svg";
-import { BiLogInCircle } from "react-icons/bi";
 import { NavLink } from "react-router";
 import { BsCart2 } from "react-icons/bs";
+import { Auth } from "./Auth";
 
 const Header = () => {
     return (
@@ -19,8 +19,7 @@ const Header = () => {
                     <CiSearch size={25} />
                     <BsCart2 size={24} />
                     <div className="flex gap-[10px] items-center cursor-pointer bg-[#46A358] py-[7px] px-[15px] rounded-[5px] text-white items-center justify-center">
-                        <BiLogInCircle size={25} />
-                        <NavLink to="/login">Login</NavLink>
+                        <Auth />
                     </div>
                 </div>
             </div>
